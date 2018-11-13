@@ -2,11 +2,14 @@
 
 ## In this manual
   
-  [Go to Real Cool Heading section](#introduction)
-  [Go to Real Cool Heading section](#components)  
-  [Go to Real Cool Heading section](#step-1-connecting-the-hardware)  
-  [Go to Real Cool Heading section](#step-2-testing-the-sensor)
-  [Go to Real Cool Heading section](#step-3-testing-the-ledstrip )
+  [Introduction](#introduction)
+  [Components](#components)  
+  [Step 1: Connecting the hardware](#step-1-connecting-the-hardware)  
+  [Step 2: Testing the sensor](#step-2-testing-the-sensor)
+  [Step 3: Testing the ledstrip](#step-3-testing-the-ledstrip)
+  [Step 4: Coding the system](#step-4-Coding-the-system)
+  [Step 5: Testing the system](#step-5-Testing-the-system)
+  [Step 6: Done](#step-6-Done)
   
 ## Introduction
 
@@ -25,8 +28,8 @@
 
 ### Step 3 Testing the ledstrip
 
-### Step 4 Coding
+### Step 4 Coding the system
 
-### Step 5 Testing
+### Step 5 Testing the system
 
 ### Step 6 Done
