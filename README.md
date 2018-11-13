@@ -8,4 +8,4 @@
 
 
 
-![alt text](https://raw.githubusercontent.com/pepijnlauriks/IOT/branch/path/to/img.png)
+![Fritzing Earthquake early warning system](https://raw.githubusercontent.com/pepijnlauriks/IOT/master/IOTfritzing.png)
