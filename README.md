@@ -19,7 +19,7 @@
   
 ## Introduction
 
-In this manual I'm going to show you how to make a (very rudimentary) Tsunami early warning system. It uses a vibration sensor that has a spring when the spring shakes it outputs a value that we can use to control an LED strip  All the code is written on MacOS and with the Arduino IDE program. 
+In this manual I'm going to show you how to make a (very rudimentary) Tsunami early warning system. It uses a vibration sensor that has a spring in it, when the spring shakes it outputs a value that we can use to control an LED strip. All the code is written on MacOS and with the Arduino IDE program. 
 You can download the Arduino IDE here: https://www.arduino.cc/en/Main/Software
 
 ## Components:
@@ -35,7 +35,7 @@ For this manual you'll need the following components:
 
 ![Fritzing Tsunami early warning system](https://raw.githubusercontent.com/pepijnlauriks/IOT/master/IOTfritzing.png)
 
-Connect the hardware components by following this diagram
+Connect the hardware components by following this diagram.
 
 
 ## Step 2 Testing the sensor
@@ -58,7 +58,7 @@ Click install!
 Once installed we can try the example called 'simple' under File > Examples > Adafruit Neopixel and see if the ledstrip works. Make sure to change the pin to D5 before uploading. Your leds should light up green if everything works correctly. If it's not working make sure the ledstrip is connected like the diagram at [Step 1: Connecting the hardware](#step-1-connecting-the-hardware) and that you changed the pin to D5.
 
 ## Step 4 Setting up the code
-Now we can start making our early warning system. First of we'll take some code frome the simple example so that we can use our ledstrip
+Now we can start making our early warning system. First of we'll take some code frome the simple example so that we can use our ledstrip.
 ```
 #include <Adafruit_NeoPixel.h>
 
@@ -89,7 +89,7 @@ for(int i=0; i<NUMPIXELS; ++i) {
 ```
 and then if its something else it's going to be dangerous so we should give feedback that people should evacuate. so using an else statement we're going to make a light trail to safety for this I used some code I found on https://learn.adafruit.com/neopixel-painter/test-neopixel-strip which gives us a cool trailing light animation.
 ### Outside of the loop
-We're going to make a function chase using the following code
+We're going to make a function chase using the following code:
 ```
 static void chase(uint32_t c) {
   for(uint16_t i=0; i<strip.numPixels()+4; i++) {
@@ -100,7 +100,7 @@ static void chase(uint32_t c) {
   }
 }
 ```
-Now we can call this function in the else statement inside the loop and give it the color we want using ```pixels.color```
+Now we can call this function in the else statement inside the loop and give it the color we want using ```pixels.color```.
 
 ## Step 6 All Done
 Congratulations! You should now have the most basic tsunami early warning system ever. If it's still not working you can try downloading my code and seeing if it works then, the sensor or ledstrip might just be broken.
